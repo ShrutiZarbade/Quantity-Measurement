@@ -37,4 +37,12 @@ public class QuantityMeasurementTest {
         assertEquals("Null Value", (String) result);
     }
 
+    @Test
+    public void TestToCheckInchType() throws Exception {
+        Object result = qm.inch(1);
+        boolean b= Integer.class.isInstance(result);
+        assertEquals(true,b);
+
+    }
+
 }
