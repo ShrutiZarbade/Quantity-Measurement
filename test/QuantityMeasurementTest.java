@@ -42,7 +42,12 @@ public class QuantityMeasurementTest {
         Object result = qm.inch(1);
         boolean b= Integer.class.isInstance(result);
         assertEquals(true,b);
+    }
 
+    @Test
+    public void TestToCheckInchValueEquality() throws Exception {
+        Object result = qm.inch(24);
+        assertEquals(2,(int) result);
     }
 
 }

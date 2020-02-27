@@ -16,7 +16,8 @@ public class QuantityMeasurement
     public Object inch(Object inch){
         if (inch instanceof Integer)
         {
-            return 0;
+            int feet = (int) inch / 12;
+            return feet;
         }
         else{
             return "Null Value";
