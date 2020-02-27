@@ -30,4 +30,11 @@ public class QuantityMeasurementTest {
         assertEquals(24,(int) result);
     }
 
+
+    @Test
+    public void TestCheckInchNull() throws Exception {
+        Object result = qm.inch(null);
+        assertEquals("Null Value", (String) result);
+    }
+
 }

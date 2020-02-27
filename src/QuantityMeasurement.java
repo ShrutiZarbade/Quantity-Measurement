@@ -12,4 +12,14 @@ public class QuantityMeasurement
             return "Null Value";
         }
     }
+
+    public Object inch(Object inch){
+        if (inch instanceof Integer)
+        {
+            return 0;
+        }
+        else{
+            return "Null Value";
+        }
+    }
 }
