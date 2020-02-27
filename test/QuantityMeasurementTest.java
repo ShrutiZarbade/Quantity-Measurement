@@ -12,15 +12,22 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void TestCheckNull() throws Exception {
+    public void TestCheckFeetNull() throws Exception {
         Object result = qm.feet(null);
         assertEquals("Null Value",(String) result);
     }
 
     @Test
-    public void TestToCheckType() throws Exception {
+    public void TestToCheckFeetType() throws Exception {
         Object result = qm.feet(1);
         boolean b= Integer.class.isInstance(result);
         assertEquals(true,b);
     }
+
+    @Test
+    public void TestToCheckFeetValueEquality() throws Exception {
+        Object result = qm.feet(2);
+        assertEquals(24,(int) result);
+    }
+
 }

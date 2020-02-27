@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class QuantityMeasurement
 {
-    public Object feet(Object feet){
+    public  Object feet(Object feet){
         if (feet instanceof Integer)
         {
-            return (int) feet;
+           int inch = 12 * (int) feet;
+           return inch;
         }
         else {
             return "Null Value";
