@@ -29,5 +29,37 @@ public class QuantityMeasurement
             } else {
                 return "Enter valid Input";
             }
+
+        }
+
+        public Object yardtofeet (Object yardtofeet) {
+
+            if (yardtofeet instanceof Integer) {
+                int yd = 3 * (int) yardtofeet;
+                return yd;
+            } else {
+                return "Enter valid Input";
+            }
+        }
+
+        public Object yardtoinch (Object yardtoinch) {
+
+            if (yardtoinch instanceof Integer) {
+                int inch = 36 * (int) yardtoinch;
+                return inch;
+            } else {
+                return "Enter valid Input";
+            }
+        }
+
+        public Object inchtoyard (Object inchtoyard) {
+
+            if (inchtoyard instanceof Integer) {
+                int yd = (int) inchtoyard / 36;
+                return yd;
+            } else {
+                return "Enter valid Input";
+            }
+        }
+
     }
-}

@@ -30,7 +30,6 @@ public class QuantityMeasurementTest {
         assertEquals(24,(int) result);
     }
 
-
     @Test
     public void TestCheckInchNull() throws Exception {
         Object result = qm.inch(null);
@@ -91,6 +90,32 @@ public class QuantityMeasurementTest {
     public void TestToCheck1ftNotEqualTo1yd() throws Exception {
         Object result = qm.feettoyard(1);
         assertNotEquals(1, (int) result);
+    }
+
+
+    @Test
+    public void TestToCheck1ydEqualTo3Feet() throws Exception {
+        Object result = qm.yardtofeet(1);
+        assertEquals(3, (int) result);
+    }
+
+    @Test
+    public void TestToCheck36inchEqualTo1yd() throws Exception {
+        Object result = qm.inchtoyard(36);
+        assertEquals(1, (int) result);
+    }
+
+    @Test
+    public void TestToCheck1inchNotEqualTo1yd() throws Exception {
+        Object result = qm.inchtoyard(1);
+        assertNotEquals(1, (int) result);
+    }
+
+
+    @Test
+    public void TestToCheck1ydEqualTo36inch() throws Exception {
+        Object result = qm.yardtoinch(1);
+        assertEquals(36, (int) result);
     }
 
 
