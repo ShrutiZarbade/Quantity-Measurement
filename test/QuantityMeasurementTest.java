@@ -63,4 +63,16 @@ public class QuantityMeasurementTest {
         assertNotEquals(1, (int) result);
     }
 
+    @Test
+    public void TestToCheck1InchNotEqualTo1Feet() throws Exception {
+        Object result = qm.feet(1);
+        assertNotEquals(1, (int) result);
+    }
+
+    @Test
+    public void TestToCheck1FeetEqualTo12inch() throws Exception {
+        Object result = qm.feet(1);
+        assertEquals(12, (int) result);
+    }
+
 }
