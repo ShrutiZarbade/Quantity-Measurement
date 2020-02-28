@@ -51,10 +51,16 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void TestToCheckZeroFeetAndInchReturnZero() throws Exception {
+    public void TestToCheckZeroFeetAndInchReturnEqual() throws Exception {
         Object result = qm.feet(0);
         Object result2 = qm.inch(0);
         assertEquals((int) result2,(int) result);
+    }
+
+    @Test
+    public void TestToCheck1FeetNotEqualTo1Inch() throws Exception {
+        Object result = qm.feet(1);
+        assertNotEquals(1, (int) result);
     }
 
 }
