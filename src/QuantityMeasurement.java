@@ -9,7 +9,7 @@ public class QuantityMeasurement
            return inch;
         }
         else {
-            return "Null Value";
+            return "Enter valid Input";
         }
     }
 
@@ -20,7 +20,7 @@ public class QuantityMeasurement
             return feet;
         }
         else{
-            return "Null Value";
+            return "Enter valid Input";
         }
 
     }
