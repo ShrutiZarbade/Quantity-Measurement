@@ -62,4 +62,14 @@ public class QuantityMeasurement
             }
         }
 
+        public Object inchtocm (Object inchtocm) {
+
+            if (inchtocm instanceof Double) {
+                double cm = (double) inchtocm * 2.5;
+                return cm;
+            } else {
+                return "Enter valid Input";
+            }
+        }
+
     }

@@ -118,5 +118,10 @@ public class QuantityMeasurementTest {
         assertEquals(36, (int) result);
     }
 
+    @Test
+    public void TestToCheckInchToCm() throws Exception {
+        Object result = qm.inchtocm(2.0);
+        assertEquals(5.0,result);
+    }
 
 }
