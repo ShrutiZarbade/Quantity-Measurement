@@ -81,4 +81,17 @@ public class QuantityMeasurementTest {
         assertEquals(1, (int) result);
     }
 
+    @Test
+    public void TestToCheck3ftEqualTo1yd() throws Exception {
+        Object result = qm.feettoyard(3);
+        assertEquals(1, (int) result);
+    }
+
+    @Test
+    public void TestToCheck1ftNotEqualTo1yd() throws Exception {
+        Object result = qm.feettoyard(1);
+        assertNotEquals(1, (int) result);
+    }
+
+
 }
