@@ -75,4 +75,10 @@ public class QuantityMeasurementTest {
         assertEquals(12, (int) result);
     }
 
+    @Test
+    public void TestToCheck12InchEqualTo1Feet() throws Exception {
+        Object result = qm.inch(12);
+        assertEquals(1, (int) result);
+    }
+
 }
